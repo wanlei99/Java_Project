@@ -2,10 +2,12 @@ package com.exam.mapper;
 
 import com.exam.entity.Admin;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface AdminMapper {
 
     @Select("select adminName,sex,tel,email,cardId,role from admin")

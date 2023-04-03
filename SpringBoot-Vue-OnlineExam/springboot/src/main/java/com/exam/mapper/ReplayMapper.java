@@ -2,10 +2,12 @@ package com.exam.mapper;
 
 import com.exam.entity.Replay;
 import org.apache.ibatis.annotations.*;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
+@Repository
 public interface ReplayMapper {
 
     @Select("select messageId,replayId,replay,replayTime from replay")
